@@ -34,3 +34,11 @@ document.addEventListener('DOMContentLoaded', function() {
         suggestionBox.style.display = 'none';
     });
 });
+
+
+
+
+// Centrar mapa
+function reloadFrame(){
+    document.getElementById('mapa').src = document.getElementById('mapa').src;
+  }
