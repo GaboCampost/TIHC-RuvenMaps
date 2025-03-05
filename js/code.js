@@ -36,6 +36,27 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+//admin cambiar divs chofer anden
+function cambiarDiv(divId) {
+    const anden = document.getElementById('anden');
+    const chofer = document.getElementById('chofer');
+
+    // Ocultar ambos divs primero
+    anden.style.display = 'none';
+    chofer.style.display = 'none';
+
+    // Mostrar el div correspondiente
+    if (divId === 'anden') {
+        anden.style.display = 'block';
+    } else if (divId === 'chofer') {
+        chofer.style.display = 'block';
+    }
+}
+
+// Mostrar uno de los divs al cargar la página
+window.onload = function() {
+    cambiarDiv('anden'); // Mostrar el div de "Andenes" por defecto
+};
 
 
 // Centrar mapa
