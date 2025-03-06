@@ -129,7 +129,8 @@ iframe {
 
 #search-input {
   border: none;
-  width: 300px
+  width: 300px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.2);
 }
 
 #search-input:focus{
@@ -142,6 +143,7 @@ iframe {
   border-radius: 15px;
   color:gray;
   padding: 10px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.2);
 }
 
 .suggestion-box {
