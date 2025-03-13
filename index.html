@@ -19,15 +19,6 @@
             <i class="ri-search-line"  style="font-size: 20px; color: #75B9E6;"></i>
             <input id="search-input" type="text" placeholder="Buscar...">
         </div>
-        <div class="suggestion-box">
-            <ul>
-                <form action="index_anden.html">
-              <li class="suggestion"><button onclick="window.location.href='index_anden.html'" type="button" class="btn btn-outline-primary" style="text-align: start;  width: 100%; margin-bottom: 10px; border-radius: 12px; border-color: #75B9E6; color: #303030;"><i class="ri-bus-line" style="color: #75B9E6;"></i>Andén 1 - Ruta: Santa Teresa</button></li>
-              <li class="suggestion"><button onclick="window.location.href='index_anden.html'" type="button" class="btn btn-outline-primary" style="text-align: start; width: 100%; margin-bottom: 10px; border-radius: 12px; border-color: #75B9E6; color: #303030;"><i class="ri-bus-line" style="color: #75B9E6;"></i>Andén 2 - Ruta: Charallave</button></li>
-              <li class="suggestion"><button onclick="window.location.href='index_anden.html'" type="button" class="btn btn-outline-primary" style="text-align: start; width: 100%; margin-bottom: 10px; border-radius: 12px; border-color: #75B9E6; color: #303030;"><i class="ri-bus-line" style="color: #75B9E6;"></i>Andén 5 - Ruta: Guarenas</button></li>
-                </form>
-            </ul>
-          </div>
     </div>
 
     <div class="sidecont">
@@ -152,6 +143,19 @@
 
             </div>
         </div>
+    </div>
+
+    <div id="popup-search" class="overlay" style="background:none;">
+        <a class="cancel" href="#"></a>
+        <div class="suggestion-box" style="display: block; position: fixed; top: 75px; left: 50%; transform: translate(-50%, 0%);">
+            <ul>
+                <form action="index_anden.html">
+              <li class="suggestion"><button onclick="window.location.href='index_anden.html'" type="button" class="btn btn-outline-primary" style="text-align: start;  width: 100%; margin-bottom: 10px; border-radius: 12px; border-color: #75B9E6; color: #303030;"><i class="ri-bus-line" style="color: #75B9E6;"></i>Andén 1 - Ruta: Santa Teresa</button></li>
+              <li class="suggestion"><button onclick="window.location.href='index_anden.html'" type="button" class="btn btn-outline-primary" style="text-align: start; width: 100%; margin-bottom: 10px; border-radius: 12px; border-color: #75B9E6; color: #303030;"><i class="ri-bus-line" style="color: #75B9E6;"></i>Andén 2 - Ruta: Charallave</button></li>
+              <li class="suggestion"><button onclick="window.location.href='index_anden.html'" type="button" class="btn btn-outline-primary" style="text-align: start; width: 100%; margin-bottom: 10px; border-radius: 12px; border-color: #75B9E6; color: #303030;"><i class="ri-bus-line" style="color: #75B9E6;"></i>Andén 5 - Ruta: Guarenas</button></li>
+                </form>
+            </ul>
+          </div>
     </div>
 
 </body>
