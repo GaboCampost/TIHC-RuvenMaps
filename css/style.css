@@ -42,6 +42,12 @@ iframe {
   border-bottom-right-radius: 12px;
 }
 
+@media only screen and (max-height: 840px) {
+  #sidebar {
+    height: 100%;
+  }
+}
+
 .sidebar-visible {
   -ms-transform: translate(500px, 0);
   -webkit-transform: translate(500px, 0);
