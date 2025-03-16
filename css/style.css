@@ -69,6 +69,11 @@ iframe {
   color: #000000;
 }
 
+@media only screen and (max-height: 840px) {
+  #sidebar {
+    height: 100%;
+  }
+}
 
 .float{
 border: 0;
