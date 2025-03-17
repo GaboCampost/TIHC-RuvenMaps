@@ -2,16 +2,16 @@ document.addEventListener("DOMContentLoaded", function () {
   // Selecciona los botones y el sidebar
   const dashboardBtn = document.querySelector(".sidebar-btn");
   const sidebar = document.getElementById("sidebar");
-
+  const rotate = document.getElementById("rotate");
   // Función para alternar las clases del sidebar
   function toggleSidebar() {
     sidebar.classList.toggle("sidebar-hidden");
     sidebar.classList.toggle("sidebar-visible");
     dashboardBtn.classList.toggle("sidebar-hidden");
     dashboardBtn.classList.toggle("sidebar-visible");
+    rotate.classList.toggle("rotate-arrow");
   }
 
-  // Añade el evento click a los botones
   if (dashboardBtn && sidebar) {
     dashboardBtn.addEventListener("click", toggleSidebar);
   } else {
