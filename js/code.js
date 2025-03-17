@@ -131,3 +131,26 @@ window.onload = function () {
 function reloadFrame() {
   document.getElementById("mapa").src = document.getElementById("mapa").src;
 }
+
+function toggleButtonDelete(){
+  var elemento = document.getElementById("buttonConfirmRutaEliminada");
+
+  if(elemento.style.display !== "none"){
+
+    elemento.style.display = "none";
+    location.reload();
+  }
+}
+
+function toggleButtonAdd(){
+  var elemento = document.getElementById("buttonConfirmRutaEliminada");
+
+  if(elemento.style.display === "none"){
+
+    elemento.style.display = "block";
+
+    setTimeout(() => {
+      location.reload();
+    }, 1); 
+  }
+}

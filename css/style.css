@@ -5,6 +5,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   font-family: "Roboto" !important;
+  overflow: hidden;
 }
 #content {
   position: absolute;
