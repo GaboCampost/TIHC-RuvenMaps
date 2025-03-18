@@ -22,6 +22,14 @@ iframe {
   overflow: hidden;
 }
 
+.row {
+  align-items: center;
+}
+
+.col-sm-1 {
+  margin-right: 5px;
+}
+
 h3 {
   font-size: 1.5rem !important;
 }
@@ -49,6 +57,7 @@ h3 {
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
   font-size: 14px;
+  font-weight: 1;
 }
 
 @media only screen and (max-height: 840px) {
