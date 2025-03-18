@@ -1,4 +1,59 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const loginButton = document.getElementById("loginButton");
+  const usernameInput = document.getElementById("username");
+  const passwordInput = document.getElementById("password");
+  const loginError = document.getElementById("loginError");
+  const infoMessage = document.getElementById("infoMessage");
+  const infoMessage2 = document.getElementById("infoMessage2");
+  const forgotPassword = document.getElementById("forgotPassword");
+  const notAdmin = document.getElementById("notAdmin");
+
+  loginButton.addEventListener("click", function () {
+    const username = usernameInput.value;
+    const password = passwordInput.value;
+
+    // Resetear estilos de borde
+    usernameInput.style.borderColor = "#75b9e6";
+    passwordInput.style.borderColor = "#75b9e6";
+
+    if (!username && !password) {
+      loginError.textContent = "Falta usuario y contraseña.";
+      loginError.style.display = "block";
+      usernameInput.style.borderColor = "red";
+      passwordInput.style.borderColor = "red";
+    } else if (!username) {
+      loginError.textContent = "Falta usuario.";
+      loginError.style.display = "block";
+      usernameInput.style.borderColor = "red";
+    } else if (!password) {
+      loginError.textContent = "Falta contraseña.";
+      loginError.style.display = "block";
+      passwordInput.style.borderColor = "red";
+    } else if (username === "admin" && password === "admin") {
+      // Login correcto, redirigir
+      window.location.href = "admin_home.html#popup-admin";
+    } else {
+      // Login incorrecto
+      loginError.textContent = `El inicio de sesión solo está permitido para los administradores. 
+          Si eres administrador y no puedes inicar sesión, comunícate con soporte.`;
+      loginError.style.display = "block";
+    }
+  });
+
+  forgotPassword.addEventListener("click", function () {
+    infoMessage.textContent =
+      "Se te ha enviado un correo para restablecer la contraseña.";
+    infoMessage.style.display = "block";
+  });
+
+  notAdmin.addEventListener("click", function () {
+    infoMessage2.textContent =
+      "Si no eres administrador, no es necesario iniciar sesión.";
+    infoMessage2.style.display = "block";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   // Selecciona los botones y el sidebar
   const dashboardBtn = document.querySelector(".sidebar-btn");
   const sidebar = document.getElementById("sidebar");
@@ -131,3 +186,26 @@ window.onload = function () {
 function reloadFrame() {
   document.getElementById("mapa").src = document.getElementById("mapa").src;
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const faqQuestions = document.querySelectorAll(".faq-question");
+
+  faqQuestions.forEach((question) => {
+    question.addEventListener("click", function () {
+      this.classList.toggle("active");
+      const answer = this.nextElementSibling;
+      const content = this.closest(".content"); // Obtener el contenedor principal
+
+      if (answer.style.maxHeight) {
+        answer.style.maxHeight = null;
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      }
+
+      // Ajustar la altura del contenedor principal
+      setTimeout(() => {
+        content.style.height = content.scrollHeight + "px";
+      }, 300); // Esperar a que la animación termine
+    });
+  });
+});
