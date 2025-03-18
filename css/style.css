@@ -264,3 +264,20 @@ ul {
     }
   }
 }
+
+#emergency{
+  margin-bottom: 0;
+  padding: 0;
+}
+
+
+
+#emergency2{
+  padding: 0;
+  position: relative;
+  top: -27px;
+}
+
+#emergency3{
+  text-align: center;
+}
