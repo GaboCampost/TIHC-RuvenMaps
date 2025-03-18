@@ -43,6 +43,7 @@ iframe {
   backface-visibility: hidden;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
+  font-size: 14px;
 }
 
 @media only screen and (max-height: 840px) {
