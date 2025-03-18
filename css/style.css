@@ -22,9 +22,14 @@ iframe {
   overflow: hidden;
 }
 
+h3 {
+  font-size: 1.5rem !important;
+}
 /* Sidebar */
 
 #sidebar {
+  overflow-y: auto;
+  overflow-x: hidden;
   box-sizing: border-box;
   background-color: #ffffff;
   min-width: 500px;
