@@ -209,3 +209,43 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+function toggleButtonDeleteRuta() {
+  var elemento = document.getElementById("buttonConfirmRutaEliminada");
+
+  if (elemento.style.display !== "none") {
+    elemento.style.display = "none";
+  }
+}
+
+function toggleButtonAddRuta() {
+  var elemento = document.getElementById("buttonConfirmRutaEliminada");
+
+  if (elemento.style.display === "none") {
+    elemento.style.display = "block";
+
+    setTimeout(() => {
+      location.reload();
+    }, 1);
+  }
+}
+
+function toggleButtonDeleteChofer() {
+  var elemento = document.getElementById("buttonConfirmChoferEliminado");
+
+  if (elemento.style.display !== "none") {
+    elemento.style.display = "none";
+  }
+}
+
+function toggleButtonAddChofer() {
+  var elemento = document.getElementById("buttonConfirmChoferEliminado");
+
+  if (elemento.style.display === "none") {
+    elemento.style.display = "block";
+
+    setTimeout(() => {
+      location.reload();
+    }, 1);
+  }
+}
