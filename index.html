@@ -28,7 +28,7 @@
         <ul>
           <li class="suggestion">
             <button
-              onclick="window.location.href='index_anden.html'"
+              onclick="window.location.href='index_anden_parada_copia.html'"
               type="button"
               class="btn btn-outline-primary"
               style="
@@ -46,7 +46,7 @@
           </li>
           <li class="suggestion">
             <button
-              onclick="window.location.href='index_anden2.html'"
+              onclick="window.location.href='index_anden2_parada_copia.html'"
               type="button"
               class="btn btn-outline-primary"
               style="
@@ -64,7 +64,7 @@
           </li>
           <li class="suggestion">
             <button
-              onclick="window.location.href='index_anden3.html'"
+              onclick="window.location.href='index_anden3_parada_copia.html'"
               type="button"
               class="btn btn-outline-primary"
               style="
@@ -76,8 +76,8 @@
                 color: #303030;
               "
             >
-              <i class="ri-bus-line" style="color: #75b9e6"></i>Andén 5 - Ruta:
-              Guarenas
+              <i class="ri-bus-line" style="color: #75b9e6"></i>Andén 3 - Ruta:
+              Los Teques
             </button>
           </li>
         </ul>
@@ -86,7 +86,7 @@
         <ul>
           <li class="suggestion">
             <button
-              onclick="window.location.href='index_anden.html'"
+              onclick="window.location.href='index_anden_parada_copia.html'"
               type="button"
               class="btn btn-outline-primary"
               style="
@@ -104,7 +104,7 @@
           </li>
           <li class="suggestion">
             <button
-              onclick="window.location.href='index_anden2.html'"
+              onclick="window.location.href='index_anden2_parada_copia.html'"
               type="button"
               class="btn btn-outline-primary"
               style="
@@ -122,7 +122,7 @@
           </li>
           <li class="suggestion">
             <button
-              onclick="window.location.href='index_anden3.html'"
+              onclick="window.location.href='index_anden3_parada_copia.html'"
               type="button"
               class="btn btn-outline-primary"
               style="
@@ -134,8 +134,8 @@
                 color: #303030;
               "
             >
-              <i class="ri-bus-line" style="color: #75b9e6"></i>Andén 5 - Ruta:
-              Guarenas
+              <i class="ri-bus-line" style="color: #75b9e6"></i>Andén 3 - Ruta:
+              Los Teques
             </button>
           </li>
         </ul>
@@ -205,7 +205,7 @@
         <h5 style="padding-left: 10px; padding-bottom: 15px">Andenes</h5>
         <div class="list-group" style="padding-left: 15px; padding-right: 15px">
           <button
-            onclick="window.location.href='index_anden.html'"
+            onclick="window.location.href='index_anden_parada_copia.html'"
             type="button"
             class="btn btn-outline-primary"
             style="
@@ -219,7 +219,7 @@
             Andén 1 - Ruta: Santa Teresa
           </button>
           <button
-            onclick="window.location.href='index_anden2.html'"
+            onclick="window.location.href='index_anden2_parada_copia.html'"
             type="button"
             class="btn btn-outline-primary"
             style="
@@ -233,7 +233,7 @@
             Andén 2 - Ruta: Charallave
           </button>
           <button
-            onclick="window.location.href='index_anden3.html'"
+            onclick="window.location.href='index_anden3_parada_copia.html'"
             type="button"
             class="btn btn-outline-primary"
             style="
@@ -256,6 +256,7 @@
               border-radius: 12px;
               border-color: #75b9e6;
               color: #303030;
+              display: none;
             "
           >
             Andén 4 - Ruta: El Junquito
@@ -270,6 +271,7 @@
               border-radius: 12px;
               border-color: #75b9e6;
               color: #303030;
+              display: none;
             "
           >
             Andén 5 - Ruta: Guarenas
@@ -317,10 +319,56 @@
     <!-- Ayuda -->
     <div id="popup-ayuda" class="overlay light">
       <a class="cancel" href="#"></a>
-      <div class="popup">
+      <div id="help" class="popup">
         <h2>Necesitas ayuda?</h2>
         <div class="content">
-          <p>Puedes contactarte al 0212.XXXXXXX para mas información.</p>
+          <div class="faq-item">
+            <button class="faq-question">
+              ¿Qué es esta aplicación de mapas?
+              <i class="ri-arrow-down-s-line"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Esta aplicación te ayuda a encontrar rutas y ubicaciones
+                importantes en Venezuela, con la Terminal de Nuevo Circo como
+                punto de partida. Puedes buscar paradas de autobús, destinos y
+                obtener información sobre cómo llegar a ellos.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              ¿Cómo puedo ver la ruta más rápida a mi destino?
+              <i class="ri-arrow-down-s-line"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Después de buscar un destino, la aplicación te mostrará la ruta
+                más rápida en el mapa. También puedes ver información sobre la
+                duración del viaje y las paradas en el camino.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              ¿Cómo puedo obtener asistencia durante el viaje?
+              <i class="ri-arrow-down-s-line"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Solo puedes desde la versión móvil que tiene más
+                funcionalidades.
+              </p>
+            </div>
+          </div>
+          <p>
+            <strong>Información de Contacto Adicional:</strong><br />
+            Si necesitas más ayuda o tienes alguna pregunta, no dudes en
+            contactarnos llamando al
+            <a href="tel:04125761223">0412 576 12 23</a>.
+          </p>
         </div>
       </div>
     </div>
@@ -330,7 +378,7 @@
         <h4 style="color: #75b9e6; display: flex; justify-content: center">
           Inicio de sesión de administrador
         </h4>
-        <a class="close" href="#">&times;</a>
+        <a class="close" href="#">×</a>
 
         <div class="container" style="padding: 30px">
           <div class="col">
@@ -375,6 +423,7 @@
             >
               <input
                 type="text"
+                id="username"
                 class="form-control"
                 style="
                   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -397,7 +446,8 @@
               "
             >
               <input
-                type="text"
+                type="password"
+                id="password"
                 class="form-control"
                 style="
                   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -417,13 +467,30 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                flex-direction: column;
               "
             >
-              <form action="admin_home.html#popup-admin" method="get">
-                <button type="submit" class="btn btn-primary">
-                  Iniciar sesión
-                </button>
-              </form>
+              <button type="button" class="btn btn-primary" id="loginButton">
+                Iniciar sesión
+              </button>
+              <div
+                id="loginError"
+                style="
+                  color: red;
+                  margin-top: 10px;
+                  display: none;
+                  text-align: center;
+                "
+              ></div>
+              <div
+                id="loginError2"
+                style="
+                  color: red;
+                  margin-top: 10px;
+                  display: none;
+                  text-align: center;
+                "
+              ></div>
             </div>
           </div>
 
@@ -437,9 +504,20 @@
                 justify-content: center;
               "
             >
-              <h6 style="color: #75b9e6">Olvidaste la contraseña?</h6>
+              <h6 type="button" style="color: #75b9e6" id="forgotPassword">
+                ¿Olvidó la contraseña?
+              </h6>
             </div>
           </div>
+          <div
+            id="infoMessage"
+            style="
+              color: green;
+              text-align: center;
+              margin-top: 10px;
+              display: none;
+            "
+          ></div>
           <div class="col" style="padding-top: 15px; padding-bottom: 15px">
             <div
               id="contra"
@@ -450,9 +528,20 @@
                 justify-content: center;
               "
             >
-              <h6 style="color: #75b9e6">No eres administrador?</h6>
+              <h6 type="button" style="color: #75b9e6" id="notAdmin">
+                ¿No es administrador?
+              </h6>
             </div>
           </div>
+          <div
+            id="infoMessage2"
+            style="
+              color: green;
+              text-align: center;
+              margin-top: 10px;
+              display: none;
+            "
+          ></div>
         </div>
       </div>
     </div>
